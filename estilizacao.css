@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+.Superior {
+	background-color: blueviolet;
+	border-top: 25px;
+	height: 80%;
+	width: 100%;
+	text-align: center;
+}
+
+.Corpo{
+	background-color: darkred;
+}
+
+div.Texto{
+	margin-left: 10px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+#Imagem{
+	border: 1px solid #555;
+	clear: left;
+	float: left;
+}
+
+#Texto1{
+	clear: left;
+	float: left;
+	text-align: justify;
+	margin-right: 10px;
+}
