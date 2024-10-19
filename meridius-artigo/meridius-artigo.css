@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border sejam contados no tamanho total */
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+.menu {
+    width: 100%;
+    background-color: purple;
+    padding: 30px 0;
+    text-align: right;
+}
+
+.menu a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+    height: 30px;
+}
+
+.link-artigo {
+    text-decoration: none;
+}
+
+#artigo h2, #artigo p {
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.secao > p {
+    text-indent: 40px;
+    padding-bottom: 15px;
+}
+
+#artigo h1 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+#artigo {
+    width: 900px;
+    padding: 20px; /* Adicionado padding para melhor espaçamento interno */
+}
+
+main {
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    gap: 20px; /* Espaço entre o main e o aside */
+}
+
+/* Estilização do aside */
+aside {
+    right: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    margin-top: 15%;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    position: fixed;
+}
+
+/* Rodapé */
+footer {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: red;
+    color: white;
+    padding: 15px 0;
+}
+
+/* Links no rodapé */
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* ===== Media Queries para Responsividade ===== */
+
+/* Ajuste para tablets e telas menores */
+@media (max-width: 900px) {
+    #artigo {
+        width: 80%; /* Reduz a largura do artigo para caber melhor na tela */
+    }
+
+    aside {
+        position: static; /* Remove posição fixa */
+        width: 100%; /* Faz o aside ocupar toda a largura */
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    main {
+        flex-direction: column; /* Coloca o conteúdo principal e o aside em colunas */
+        align-items: center;
+    }
+}
+
+/* Ajuste para telas de celular */
+@media (max-width: 600px) {
+    #artigo {
+        width: 90%; 
+        padding: 10px;
+    }
+
+    .menu {
+        text-align: center; /* Centraliza o menu */
+        padding: 15px 0;
+    }
+
+    .menu a {
+        display: block; /* Organiza os links do menu verticalmente */
+        margin: 10px 0;
+    }
+
+    aside {
+        margin-top: 10px;
+    }
+}
