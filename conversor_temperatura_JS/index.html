@@ -1,0 +1,87 @@
+<html>
+    <body>
+        <script>
+            // Algoritmo em JavaScript para converter temperaturas em medidas diferentes
+
+            // Constantes não-inteiras
+            // Consatentes usadas na conversão de temperatura
+            const kelvin = 27315 / 100;
+            const fahrenheit_1 = 9 / 5;
+            const fahrenheit_2 = 45967 / 100;
+
+            // 0s absolutos de cada temperatura
+            const zero_ab_kelvin = 0;
+            const zero_ab_fahrenheit = -fahrenheit_2;
+            const zero_ab_celsius = -kelvin;
+
+            // Função para validar se a temperatura escolhida está entre as opções
+            function temperaturaInvalida(temp){
+                do {
+                    temp = prompt("Informe uma medida de temperatura (K - Kelvin; F - Fahrenheit; e C - Celsius):").toUpperCase();
+                    if (temp !== "K" && temp !== "F" && temp !== "C") {
+                        window.alert("A medida de temperatura informada é inválida!");
+                    }
+                } while (temp !== "K" && temp !== "F" && temp !== "C");
+                return temp;
+            }
+
+            // Estabelecer a temperatura original
+            var temp_1 = null;
+            temp_1 = temperaturaInvalida(temp_1);
+            var graus_1 = parseInt(prompt("Informe em quantos graus está a temperatura escolhida: "));
+            var zero_ab = null;
+
+            // Validar o 0 absoluto da medida de temperatura escolhida previamente
+            if(temp_1 == "K"){
+                zero_ab = zero_ab_kelvin;
+            }else if(temp_1 == "F"){
+                zero_ab = zero_ab_fahrenheit;
+            }else if(temp_1 == "C"){
+                zero_ab = zero_ab_celsius;
+            }
+
+            while(isNaN(graus_1) || zero_ab > graus_1){
+                window.alert("Valor de graus inválido!");
+                graus_1 = parseInt(prompt("Informe em quantos graus está a temperatura escolhida: "));
+            }
+            
+            // Estabelecer a medida de temperatura para à qual será convertida
+            var temp_2 = null;
+            temp_2 = temperaturaInvalida(temp_2);
+            var graus_2 = null;
+
+            // Converter a temperatura
+            if(temp_1 != temp_2){ // verifica se as medidas não são iguais
+                if(temp_1 == 'C'){
+                    if(temp_2 == 'F'){
+                        graus_2 = graus_1 * fahrenheit_1 + 32; // Converter do Celsius para Fahrenheit
+                    }else if(temp_2 == 'K'){
+                        graus_2 = graus_1 + kelvin; // Converter do Celsius para Kelvin
+                    }
+                }else if(temp_1 == 'F'){
+                    if(temp_2 == 'C'){
+                        graus_2 =  (graus_1 + 32) * fahrenheit_1; // Converter do Fahrenheit para Celsius
+                    }else if(temp_2 == 'K'){
+                        graus_2 = (graus_1 + fahrenheit_2) / fahrenheit_1; // Converter do Fahrenheit para Kelvin
+                    }
+                }else if(temp_1 == 'K'){
+                    if(temp_2 == 'C'){
+                        graus_2 = graus_1 - kelvin; // Converter do Kelvin para Celsius
+                    }else if(temp_2 == 'F'){
+                        graus_2 = graus_1 * fahrenheit_1 - fahrenheit_2; // Converter do Kelvin para Fahrenheit
+                    }
+                }
+            }else{
+                graus_2 = graus_1;
+            }
+
+            // Perfumaria
+            temp_2 = " " + temp_2;
+            if(temp_2 != " K"){
+                temp_2 = "°" + temp_2;
+            }
+                
+            window.alert("O valor é "+Math.round(graus_2)+temp_2);
+        </script>
+    </body>
+</html>
