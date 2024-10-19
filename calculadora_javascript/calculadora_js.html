@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <script>
+            // Números inícais
+            var num1 = parseInt(prompt("Informe um número:"));
+            var num2 = parseInt(prompt("Informe outro número:"));
+
+            // Escolha da operação a ser calculada
+            var operacao = prompt("Escolha um operação válida (+, -, *, /):");
+            
+            // Loop para operação inválida
+            while(operacao != '+' && operacao != '-' && operacao != '*' && operacao != '/'){
+                alert("Operação inválida!");
+                operacao = prompt("Escolha um operação válida (+, -, *, /):");
+            }
+
+            // Calculo condicional
+            if(operacao == '+'){
+                var valor = num1 + num2;
+            }else if(operacao == '-'){
+                var valor = num1 - num2;
+            }else if(operacao == '*'){
+                var valor = num1 * num2;
+            }else if(operacao == '/'){
+                var valor = num1 / num2;
+            }
+            
+            // Exibição do valor
+            alert("Valor é "+valor);
+        </script>
+    </body>
+</html>
