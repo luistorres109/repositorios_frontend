@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Garante que padding e border sejam contados no tamanho total */
+    box-sizing: border-box;
 }
 
 html, body {
@@ -46,17 +46,24 @@ html, body {
 
 #artigo {
     width: 900px;
-    padding: 20px; /* Adicionado padding para melhor espaçamento interno */
+    padding: 20px;
 }
 
 main {
     justify-content: center;
     display: flex;
     padding: 20px;
-    gap: 20px; /* Espaço entre o main e o aside */
+    gap: 20px;
 }
 
-/* Estilização do aside */
+aside p {
+    margin-top: 15px;
+}
+
+#artigos{
+    text-align: center;
+}
+
 aside {
     right: 30px;
     display: grid;
@@ -72,7 +79,6 @@ aside {
     position: fixed;
 }
 
-/* Rodapé */
 footer {
     position: relative;
     bottom: 0;
@@ -83,34 +89,35 @@ footer {
     padding: 15px 0;
 }
 
-/* Links no rodapé */
 footer a {
     color: white;
     text-decoration: underline;
 }
 
-/* ===== Media Queries para Responsividade ===== */
+@media (max-width: 1550px) {
+    aside {
+        visibility: hidden;
+    }
+}
 
-/* Ajuste para tablets e telas menores */
 @media (max-width: 900px) {
     #artigo {
-        width: 80%; /* Reduz a largura do artigo para caber melhor na tela */
+        width: 80%;
     }
 
     aside {
-        position: static; /* Remove posição fixa */
-        width: 100%; /* Faz o aside ocupar toda a largura */
+        position: static;
+        width: 100%;
         margin-top: 20px;
         padding: 10px;
     }
 
     main {
-        flex-direction: column; /* Coloca o conteúdo principal e o aside em colunas */
+        flex-direction: column;
         align-items: center;
     }
 }
 
-/* Ajuste para telas de celular */
 @media (max-width: 600px) {
     #artigo {
         width: 90%; 
@@ -118,12 +125,12 @@ footer a {
     }
 
     .menu {
-        text-align: center; /* Centraliza o menu */
+        text-align: center;
         padding: 15px 0;
     }
 
     .menu a {
-        display: block; /* Organiza os links do menu verticalmente */
+        display: block;
         margin: 10px 0;
     }
 
