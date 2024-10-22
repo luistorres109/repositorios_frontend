@@ -96,20 +96,16 @@ footer a {
 
 @media (max-width: 1550px) {
     aside {
-        visibility: hidden;
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
     }
 }
 
 @media (max-width: 900px) {
     #artigo {
         width: 80%;
-    }
-
-    aside {
-        position: static;
-        width: 100%;
-        margin-top: 20px;
-        padding: 10px;
     }
 
     main {
