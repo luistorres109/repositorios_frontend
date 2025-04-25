@@ -1,3 +1,37 @@
-# Repositórios Front-End
+# 🖥️ Repositório de Estudos – Front-End
 
-Coleção dos meus repositórios HTML para treinamento
+Este repositório reúne projetos e testes de conceitos em front-end, com foco em HTML, CSS e JavaScript. Os arquivos foram organizados ao longo do aprendizado para treinar estrutura, responsividade e interação.
+
+## 🧠 Objetivo
+
+Consolidar os fundamentos de front-end por meio da construção de pequenos projetos e componentes reutilizáveis.
+
+## 🛠️ Tecnologias
+
+- HTML5
+- CSS3
+- JavaScript puro
+- Flexbox / Grid
+- Responsividade
+
+## 📂 Conteúdo / Estrutura
+
+O repositório é dividido por pastas, cada uma contendo um projeto/exercício específico.
+
+- Layouts responsivos
+- Navegação com JS
+- Prototipação de páginas
+- Exercícios com Flexbox e Grid
+
+## 🚀 Como executar
+
+Abra qualquer `index.html` diretamente no navegador.  
+Ou clone o repositório:
+
+```bash
+git clone https://github.com/luistorres109/repositorios_frontend
+```
+## 📦 Como visualizar
+
+1. Clone o repositório
+2. Abra os arquivos `.html` direto no navegador
