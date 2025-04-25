@@ -23,15 +23,11 @@ O repositório é dividido por pastas, cada uma contendo um projeto/exercício e
 - Prototipação de páginas
 - Exercícios com Flexbox e Grid
 
-## 🚀 Como executar
-
-Abra qualquer `index.html` diretamente no navegador.  
-Ou clone o repositório:
-
-```bash
-git clone https://github.com/luistorres109/repositorios_frontend
-```
 ## 📦 Como visualizar
 
 1. Clone o repositório
 2. Abra os arquivos `.html` direto no navegador
+
+```bash
+git clone https://github.com/luistorres109/repositorios_frontend
+```
