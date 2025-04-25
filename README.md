@@ -1,6 +1,6 @@
 # 🖥️ Repositório de Estudos – Front-End
 
-Este repositório reúne projetos e testes de conceitos em front-end, com foco em HTML, CSS e JavaScript. Os arquivos foram organizados ao longo do aprendizado para treinar estrutura, responsividade e interação.
+Este repositório reúne projetos e testes de conceitos em *Front-End*, com foco em HTML, CSS e JavaScript. Os arquivos foram organizados ao longo do aprendizado para treinar estrutura, responsividade e interação.
 
 ## 🧠 Objetivo
 
